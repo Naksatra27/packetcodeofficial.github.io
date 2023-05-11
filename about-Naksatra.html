@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Naksatra's Biodata</title>
+</head>
+<header>
+	<p class="round">
+		<a href="https://www.facebook.com/naksatrapremanand" target="_blank"><img src="facebookicon.png" alt="Facebook Icon" width="40px"></a>
+		<a href="https://www.instagram.com/naksatraaa" target="_blank"><img src="instagramicon.png" alt="Instagram Icon" width="40px"></a>
+		<a href="https://www.twitter.com/naksatraaaaa" target="_blank"><img src="twittericon.png" alt="Twitter Icon" width="40px"></a>
+		<a id="datetime"></a>
+	<script>
+	  var today = new Date();
+	  var date = today.getDate();
+	  var month = today.getMonth() + 1;
+	  var year = today.getFullYear();
+	  var day = today.getDay();
+	  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	  var dateStr = days[day] + ', ' + month + '/' + date + '/' + year;
+	  document.getElementById("datetime").innerHTML = dateStr;
+	</script>
+	
+	</p>
+</header>
+
+<form>
+    <label for="message">Say something to Naksatra ♡♡</label>
+    <input
+	type="text" id="message" name="message">
+    <button type="submit">Send her</button>
+  </form>
+  
+ <!-- Create a div to display the messages -->
+  <div id="messages"></div>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main>
+		<div class="center">
+		<div class="circle">
+		<img src="mypicture.jpg" alt="Your Image">
+		</div>
+		</div>
+	</main>
+	
+<div class="dropdown">
+  <span>Place your cursor here to see my pet ♡♡ </span>
+  <div class="dropdown-content">
+  <img src="garfie.jpg" alt="My Pet" class="square-img"/>
+  <p>Meet Garfie!</p>
+  </div>
+</div>
+
+<body>
+	<style>
+		/* Table */
+		table {
+			border-collapse: collapse;
+			margin:0 auto;
+			background-color: no color
+		}
+		
+		/* Table */
+		th, td {
+			border: 1px solid brown;
+			padding: 8px;
+			text-align: center ;
+		}
+		
+		/* Background picture */
+		body {
+        background-image: url("https://source.unsplash.com/random/1920x1080/?clouds");
+        background-repeat: no-repeat;
+        background-size: cover;
+		text-align:center;
+		}
+	
+		/* Define the animation */
+		@keyframes move-back-and-forth {
+			0% {
+				transform: translateX(0);
+			}
+			30% {
+				transform: translateX(20px);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		/* Apply the animation to an element */
+		.my-element {
+			animation-name: move-back-and-forth;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+		
+		/* My name */
+		h1 {
+			font-family: "Courier New", monospace;
+			font-size: 60px;
+			font-weight: bold;
+			color: white;
+		}
+		
+		/* Fun facts & and hobbies title*/
+		h2 {
+			font-family: "Courier New", monospace;
+			font-size: 30px;
+			font-weight: bold;
+			color: IndianRed;
+			text-align: center;
+		}
+		
+		input{
+			font-family: "Courier New", monospace;
+			font-size: 20px;
+			font-weight: bold;
+			color: indianred;
+			text-align: left;
+		}
+		
+		
+		/* Content for hobbies */
+		ul {
+			font-family: "Courier New", monospace;
+			font-size: 18px;
+			font-style: bold;
+			color: white;
+			text-align: center;
+		}
+		
+		/* Content in the table */
+		tr {
+			font-family: "Courier New", monospace;
+			font-size: 18px;
+			font-style: bold;
+			color: white;
+		}
+
+		/* Top border */
+		p.round {
+		border:1px solid white;
+		border-radius: 12px;
+		padding: 20px;
+		color: white;
+		text-align: left;
+		font-family: "Courier New", monospace;
+		font-size: 18px;
+		font-style: bold;
+		color: white;
+		}
+	
+		/* Dropdown Menu */
+		.dropdown {
+		position: relative
+		display: inline-block;
+		float: right;
+		font-family: "Courier New", monospace;
+		font-size: 25px;
+		font-style: bold;
+		color: IndianRed;
+		}
+
+		/* Garfie */
+		.dropdown-content {
+		display: none;
+		position: static;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 1;
+		}
+
+        /* Garfie */
+		.dropdown:hover .dropdown-content {
+		display: block;
+		}
+			
+		/* Garfie's Picture */
+		 .square-img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+		}
+	
+		/* Garfie */
+		span{
+		font-family: "Courier New", monospace;
+		font-size: 20px;
+		font-weight: bold;
+		float: right;
+		}
+		
+		/* My Picture */
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.circle {
+			border-radius: 50%;
+			overflow: hidden;
+			width: 500px;
+			height: 500px;
+		}
+		.circle img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}	
+		
+		/* Message */
+		form {
+		font-family: "Courier New", monospace;
+			font-size: 20px;
+			font-weight: bold;
+			color: Pink;
+			text-align: left;
+		
+		/* Button for the message /
+		button {
+		font-family: "Courier New", monospace;
+			font-size: 20px;
+			font-weight: bold;
+			color: IndianRed;
+			text-align: left;
+			}
+	
+	</style>
+	<main>
+
+  <script>
+    // Get a reference to the form and the messages div
+    var form = document.querySelector('form');
+    var messagesDiv = document.getElementById('messages');
+
+    // Add an event listener for the form submit event
+    form.addEventListener('submit', function(event) {
+      // Prevent the form from submitting and refreshing the page
+      event.preventDefault();
+
+      // Get the message text from the form input
+      var messageText = form.elements.message.value;
+
+      // Create a new message element and add it to the messages div
+      var messageDiv = document.createElement('div');
+      messageDiv.innerText = messageText;
+      messagesDiv.appendChild(messageDiv);
+
+      // Reset the form input
+      form.reset();
+    });
+  </script>
+  
+		  <input type="button" value="Click Me" onclick="alert('Hello there, how are you doing today?')">
+	
+	<table>
+	<h2> ♡♡♡♡♡  </h2>
+	
+			<tr>
+				<td>Name</td>
+				<td>Naksatra Premanand</td>
+			</tr>
+			<tr>
+				<td>Date of birth</td>
+				<td>27th January 2002</td>
+			</tr>
+			<tr>
+				<td>Place of birth</td>
+				<td>Kulai, Johor</td>
+			</tr>
+			<tr>
+				<td>Email address</td>
+				<td>naksatraprem@gmail.com</td>
+			</tr>
+		</table>
+		<section>
+			<h2>Fun facts about myself</h2>
+			<ul>
+				<ul>I don't like pineapples on my pizza</ul>
+				<ul>I enjoy collecting beach sand and seashells</ul>
+				<ul>I've watched karate kid more than 10 times</ul>
+			</ul>
+			<h2>Hobbies</h2>
+			<ul>I enjoy baking and journalling</ul>
+		</section>
+		
+	</main>
+</body>	
+
+<head>
+  <title>Click the Circle Game</title>
+  <style>
+    /* Style for the game container */
+    #game-container {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      border: no color;
+    }
+
+    /* Style for the circle object */
+    #circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: pink;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <ul> ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡   </ul>
+  <h1>Let's Play a Game </h1>
+
+  <ul>Click on the moving circle as many times as you can within 20 seconds.</ul>
+
+  <div id="game-container">
+    <div id="circle"></div>
+  </div>
+
+  <ul>Score: <span id="score">0</span></ul>
+  <ul>Time left: <span id="time">20</span> seconds</ul>
+
+  <script>
+    // Get the circle object and the game container
+    const circle = document.getElementById("circle");
+    const gameContainer = document.getElementById("game-container");
+
+    // Set the initial score and time left
+    let score = 0;
+    let timeLeft = 20;
+
+    // Add a click event listener to the circle object
+    circle.addEventListener("click", function() {
+      // Increase the score and update the score display
+      score++;
+      document.getElementById("score").innerText = score;
+
+      // Move the circle to a random position
+      circle.style.top = Math.random() * (gameContainer.offsetHeight - circle.offsetHeight) + "px";
+      circle.style.left = Math.random() * (gameContainer.offsetWidth - circle.offsetWidth) + "px";
+    });
+
+    // Set an interval to update the time left display
+    setInterval(function() {
+      timeLeft--;
+      document.getElementById("time").innerText = timeLeft + " seconds";
+
+      // End the game if time runs out
+      if (timeLeft == 0) {
+        clearInterval(interval);
+        circle.remove();
+        alert("Game over! Your score is " + score);
+      }
+    }, 1000);
+
+    // Set an interval to move the circle every 500 milliseconds
+    const interval = setInterval(function() {
+      circle.style.top = Math.random() * (gameContainer.offsetHeight - circle.offsetHeight) + "px";
+      circle.style.left = Math.random() * (gameContainer.offsetWidth - circle.offsetWidth) + "px";
+    }, 500);
+  </script>
+
+<title>Photo Gallery</title>
+  <style>
+    /* Style for the gallery container */
+    #gallery-container {
+      width: 700px;
+      height: 700px;
+      position: relative;
+      border: 1px solid black;
+      overflow: hidden;
+    }
+
+    /* Style for the gallery image */
+    #gallery-image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+
+    /* Style for the thumbnail container */
+    #thumbnail-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    /* Style for the thumbnail images */
+    .thumbnail {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* Style for the selected thumbnail image */
+    .selected-thumbnail {
+      border: 2px solid blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Photo Gallery</h1>
+
+  <div id="gallery-container">
+    <img id="gallery-image" src="image1.jpg">
+  </div>
+
+  <div id="thumbnail-container">
+    <img class="thumbnail" src="image1.jpg" onclick="selectImage(this)">
+    <img class="thumbnail" src="image2.jpg" onclick="selectImage(this)">
+    <img class="thumbnail" src="image3.jpg" onclick="selectImage(this)">
+	<img class="thumbnail" src="image4.jpg" onclick="selectImage(this)">
+	<img class="thumbnail" src="image5.jpg" onclick="selectImage(this)">
+	<img class="thumbnail" src="image6.jpg" onclick="selectImage(this)">
+	<img class="thumbnail" src="image7.jpg" onclick="selectImage(this)">
+	<img class="thumbnail" src="image8.jpg" onclick="selectImage(this)">
+	<img class="thumbnail" src="image9.jpg" onclick="selectImage(this)">
+	<img class="thumbnail" src="image10.jpg" onclick="selectImage(this)">
+  </div>
+
+  <script>
+    // Get the gallery image and the thumbnail images
+    const galleryImage = document.getElementById("gallery-image");
+    const thumbnails = document.getElementsByClassName("thumbnail");
+
+    // Set the initial selected thumbnail
+    let selectedThumbnail = thumbnails[0];
+    selectedThumbnail.classList.add("selected-thumbnail");
+
+    // Add a click event listener to each thumbnail
+    for (let i = 0; i < thumbnails.length; i++) {
+      thumbnails[i].addEventListener("click", function() {
+        // Remove the selected thumbnail style from the previously selected thumbnail
+        selectedThumbnail.classList.remove("selected-thumbnail");
+
+        // Set the new selected thumbnail and add the selected thumbnail style
+        selectedThumbnail = thumbnails[i];
+        selectedThumbnail.classList.add("selected-thumbnail");
+
+        // Update the gallery image with the corresponding thumbnail image
+        galleryImage.src = selectedThumbnail.src;
+      });
+    }
+  </script>
+
+  <ul> ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡   </ul>
+
+</body>
+</html>
